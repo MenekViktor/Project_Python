@@ -1,10 +1,20 @@
 {% extends 'main/layout.html' %}
 
 
-{% block title %}Главная станица{% endblock %}
+{% block title %}{{title}}{% endblock %}
 
 {% block content %}
-    <p>Главная станица</p>
+<div class="features">
+    <h1>{{title}}</h1>
 
+    {% for val in values %}
+        {% if val == 'hii' %}
+            {% filter upper %}
+                <p>{{val}}</p>
+            {% endfilter %}
+        {% endif %}
+    {% endfor %}
+    {{obj.age}}
 
+</div>
 {% endblock %}
