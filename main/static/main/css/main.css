@@ -1,3 +1,7 @@
+body{
+    background: #D9D9D9;
+}
+
 
 .avatar{
     border-radius: 90%;
@@ -9,9 +13,7 @@ aside {
     background: #181818;
     width: 20%;
     padding: 2.5%;
-    height: 100vh;
-
-
+    height: 1000px;
 }
 
 aside .logo {
@@ -38,8 +40,12 @@ aside ul li {
     transition: transform .6s ease;
 }
 
-a, btn {
+btn {
  text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -76,4 +82,9 @@ form {
     width: 500px;
     margin-top: 50px;
 }
+
+.container {
+    display: center;
+}
+
 

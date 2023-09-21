@@ -6,17 +6,8 @@
 {% block content %}
 
     <div class="features">
-        <h1>{{title}}</h1>
-
-        {% for val in values %}
-            {% if val == 'hii' %}
-                {% filter upper %}
-                    <p>{{val}}</p>
-                {% endfilter %}
-            {% endif %}
-        {% endfor %}
-        {{obj.age}}
-
+        <h3>{{title}}</h3>
+        <p>Последние новости и слухи о The Witcher 3: Wild Hunt за сегодня и 2023 год. Здесь вы найдете все новости обновлений The Witcher 3: Wild Hunt, узнаете дату выхода для PC, когда игра выйдет на других платформах и другие анонсы. Также мы первые напишем о системных требованиях The Witcher 3: Wild Hunt для ПК, о пиратских взломах и появлении игры на торрентах, откуда ее может скачать бесплатно любой желающий.</p>
     </div>
 
 {% endblock %}

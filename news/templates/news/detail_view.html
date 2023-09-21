@@ -15,7 +15,10 @@
             </a>
         {% endif %}
         <p>{{article.full_text}}</p>
-        <a href="{% url 'news_delete' article.id %}" class="btn btn-danger">Удалить</a>
-        <a href="{% url 'news_update' article.id %}" class="btn btn-danger">Редактировать</a>
+        <div>
+            <a href="{% url 'news_delete' article.id %}" class="btn btn-danger">Удалить</a>
+            <a href="{% url 'news_update' article.id %}" class="btn btn-danger">Редактировать</a>
+        </div>
+
     </div>
 {% endblock %}
