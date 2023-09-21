@@ -5,7 +5,7 @@
 
 
 aside {
-
+    float:left;
     background: #181818;
     width: 20%;
     padding: 2.5%;
@@ -49,18 +49,22 @@ aside li:hover {
     transform: scale(1.05);
 
 }
-.naw {
-    display: flex;
 
+.features{
+    display: flex;
+    flex-direction: column;
 }
+
 
 
 
 main .features h1 {font-size: 50px;}
 
+
 main .features p { margin: 20px auto;}
 
 .alert-warning {
+
     width: 400px;
     margin: 20px 34%;
 

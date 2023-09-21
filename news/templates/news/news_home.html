@@ -1,11 +1,12 @@
 {% extends 'main/layout.html' %}
 
-
+<center>
 {% block title %}Новости на сайте{% endblock %}
+</center>
 
 {% block content %}
+    <h4>Новости на сайте</h4>
     <div class="features">
-        <h4>Новости на сайте</h4>
         {% if news %}
             {% for new in news %}
                 <div class="alert alert-warning">
@@ -17,11 +18,5 @@
         {% else %}
             <p>У вас нет записей!!!</p>
         {% endif %}
-
-
-
-
-
-
     </div>
 {% endblock %}
